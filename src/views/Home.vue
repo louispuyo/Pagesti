@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <chips class="ma-1 pa-1" color="#FF4081">
+    <chips ma-4 color="#FF4081">
       <DashBoard />
     </chips >
      <v-divider></v-divider>

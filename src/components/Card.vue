@@ -1,8 +1,10 @@
 <template>
-  <v-card id="lateral">
+  <v-card id="lateral" dropzone=true>
     <v-toolbar dark tabs flat color="indigo">
-      <v-app-bar style="max-width: 150px">
-        <v-icon>{{ activeFab.icon2 }}</v-icon>
+         Free Rooms
+      <v-app-bar style="max-width: 150px" ma-3>
+         
+        <v-icon ma-4>{{ activeFab.icon2 }}</v-icon>
       </v-app-bar>
       <v-flex xs1>
       <v-toolbar-title v-slot:extended>Free Room</v-toolbar-title>
@@ -28,6 +30,7 @@
         <v-tab-item v-for="content in ['Menu', 'Room', 'contact']" :key="content" :value="content">
           <v-card height="400px" flat>
             <Market />
+                
           </v-card>
         </v-tab-item>
       </v-tabs-items>
@@ -51,22 +54,18 @@
 </template>
 <script>
 import Market from "./Market";
+//import Panel from "./Test";
+
 export default {
   components: {
-    Market
+    Market,
+    //Panel
   },
   data: () => ({
     fab: false,
     hidden: false,
-    tabs: null,
-    RoomList: [{key:'001', available: true, location: 'ST'},
-    {key:'001', available: false, location: 'AM'},
-    {key:'002', available: true, location: 'AM'},
-    {key:'003', available: false, location: 'ST'},
-    {key:'004', available: false, location: 'PA'},
-    {key:'005', available: true, location: 'AM'},
-    {key:'006', available: true, location: 'PA'},
-    {key:'007', available: true, location: 'PA'} ]
+    tabs: null
+    
   }),
 
   computed: {
@@ -76,7 +75,8 @@ export default {
           return {
             color: "#FF4081",
             icon: "hotel",
-            icon2: "star star star star star"
+            icon2: "star star star star star",
+
           };
         case "Room":
           return {

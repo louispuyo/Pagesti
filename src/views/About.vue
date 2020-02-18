@@ -1,7 +1,7 @@
 <template>
-  <div class="about">
+  <div id="about">
     <h1>Contact us</h1>
-    <Contact />
+   <v-row row="2"> <Contact/> </v-row>
   </div>
 </template>
 <script>
@@ -15,8 +15,8 @@ export default {
 }
 </script>
 <style>
-#about {
+.Contact{
   flex: 10%;
-  margin: 0;
-}
+  align-content: center;
+  }
 </style>
