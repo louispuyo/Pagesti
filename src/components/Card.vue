@@ -28,12 +28,15 @@
     <v-card-text>
       <v-tabs-items v-model="tabs">
         <v-tab-item v-for="content in ['Menu', 'Room', 'contact']" :key="content" :value="content">
-          <v-card height="400px" flat>
+          <v-card height="500px" flat>
             <Market />
-                
+         
+               
+            
           </v-card>
         </v-tab-item>
       </v-tabs-items>
+       <DropZone />
     </v-card-text>
     <v-fab-transition>
       <v-btn
@@ -54,11 +57,14 @@
 </template>
 <script>
 import Market from "./Market";
+import DropZone from "./DropZone";
 //import Panel from "./Test";
 
 export default {
   components: {
     Market,
+    DropZone
+
     //Panel
   },
   data: () => ({
@@ -96,7 +102,7 @@ export default {
 <style>
 /* This is for documentation purposes and will not be needed in your application */
 #lateral .v-btn--example {
-  bottom: 0;
+  top: 150px;
   position: absolute;
   margin: 0 0 16px 16px;
   border-start-end-radius: 100%;

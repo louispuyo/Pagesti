@@ -2,8 +2,11 @@ import Vue from 'vue';
 import Vuetify from 'vuetify';
 import 'vuetify/dist/vuetify.min.css';
 import colors from 'vuetify/lib/util/colors'
-
+import VueDragDrop from 'vue-drag-drop';
 Vue.use(Vuetify);
+
+ 
+Vue.use(VueDragDrop);
 
 export default new Vuetify({
   icons: {

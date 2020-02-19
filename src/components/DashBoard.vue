@@ -4,19 +4,19 @@
       <v-card-title primary-title>Hotel Room</v-card-title>
       <v-layout ma-2 id="btn--room">
         <v-chip gradient="circle" ma-3 elevation-10 draggable=true>
-          <v-btn rounded color="#4DD0E1" ma-2>929</v-btn>
+          <v-btn to="/ST-Rooms" rounded color="#4DD0E1" ma-2>929</v-btn>
           <v-icon color="#4DD0E1" pa-2>mdi-beach</v-icon>Sea View
         </v-chip>
         <v-chip gradient="circle" ma-3 elevation-10 draggable=true>
-          <v-btn rounded color="#FFA000">334</v-btn>
+          <v-btn to="/about" rounded color="#FFA000">334</v-btn>
           <v-icon color="#FFA000" pa-2>mdi-cash</v-icon>Presidential
         </v-chip>
         <v-chip gradient="circle" ma-3 elevation-10 draggable=true>
-          <v-btn rounded color="#773D8E">432</v-btn>
+          <v-btn to="/about" rounded color="#773D8E">432</v-btn>
           <v-icon color="#773D8E" pa-2>mdi-account</v-icon>Single
         </v-chip>
         <v-chip gradient="circle" ma-3 elevation-10 draggable=true>
-          <v-btn rounded color="#773D8E">409</v-btn>
+          <v-btn to="/about" rounded color="#773D8E">409</v-btn>
           <v-icon color="#773D8E" pa-2>mdi-baby</v-icon>Familial
         </v-chip>
       </v-layout>
